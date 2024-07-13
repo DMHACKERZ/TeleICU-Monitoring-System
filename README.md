@@ -9,7 +9,7 @@ This project implements an innovative monitoring system for TeleICU patients usi
 **Patient Detection and Tracking**: Utilizes the YOLOv8 object detection model to identify and track patients, doctors, nurses, monitors and others in the video feed.
 
 **Movement Analysis**: Implements advanced motion detection algorithms to analyze patient movements, including:
- *  Overall motion detection using Structural Similarity Index (SSIM)
+ *  Overall motion detection using Structural Similarity Index (SSIM) method for measuring the similarity between two images.
  *  Specific movement detection for head, hands, legs, and chest (for breathlessness)
 
 **Fall Detection**: Incorporates a separate YOLOv8 model trained specifically for detecting fall incidents.
