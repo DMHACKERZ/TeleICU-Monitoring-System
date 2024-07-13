@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['bed', 'danger', 'fall', 'lie', 'patient', 'person', 'sit']
+
+roboflow:
+  workspace: ytrecycle-lzqa8
+  project: elder_falldanger
+  version: 17
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ytrecycle-lzqa8/elder_falldanger/dataset/17

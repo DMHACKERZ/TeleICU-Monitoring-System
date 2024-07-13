@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 5
+names: ['doctor', 'monitor', 'nurse', 'others', 'patient']
+
+roboflow:
+  workspace: teleicu-tnoth
+  project: teleicu-kfh3d
+  version: 2
+  license: Private
+  url: modified.locally
