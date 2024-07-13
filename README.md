@@ -14,7 +14,7 @@ This project implements an innovative monitoring system for TeleICU patients usi
 
 **Fall Detection**: Incorporates a separate YOLOv8 model trained specifically for detecting fall incidents.
 
-**Real-time Alerting**: Generates visual alerts on the video feed when critical events (like falls) are detected.
+**Real-time Alerting**: Generates visual alerts on the video feed when critical events of patients are detected.
 
 **Movement Logging**: Records detected movements with timestamps in a log file for later analysis.
 
@@ -29,7 +29,7 @@ This project implements an innovative monitoring system for TeleICU patients usi
 
 **Object Detection**
 
-YOLOv8 models are employed for object detection:
+Fine-Tuned YOLOv8 models are employed for object detection:
 
 1. A general model ('person_labelling.pt') for detecting patients, doctors, nurses, monitor and others.
 2. A specialized model ('fall_detection.pt') for fall detection.
