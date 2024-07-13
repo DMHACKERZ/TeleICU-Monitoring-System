@@ -58,7 +58,7 @@ Multithreading is used to ensure smooth performance, especially for the continuo
      * Supports video input from local files, URLs (e.g., YouTube), and live CCTV feeds.
        
 2. **Person Detection and Identification**
-      * Detects various individuals in the ICU, including doctors, nurses, and patients using the YOLOv8 model (best.pt).
+      * Detects various individuals in the ICU, including doctors, nurses, and patients using the YOLOv8 model (person_labelling.pt).
       * Identifies when a patient is without a doctor or nurse and changes the bounding box color accordingly:
           * Green: Indicates presence of a doctor or nurse.
           * Yellow: Indicates no significant motion detected and no doctor/nurse present.
@@ -69,7 +69,7 @@ Multithreading is used to ensure smooth performance, especially for the continuo
       * Detects and analyzes specific patient movements such as head, hand, leg movements, and signs of breathlessness using optical flow and structural similarity metrics.
 
 4. **Fall Detection and Alert System**
-      * Uses a secondary YOLOv8 model (best_fall_danger.pt) for detecting falls and other dangerous movements.
+      * Uses a secondary YOLOv8 model (fall_detection.pt) for detecting falls and other dangerous movements.
       * Generates real-time alerts with visual indicators and log entries for critical detections.
       * Displays a red border around the video frame and an alert message for a specified duration when a fall is detected.
 
