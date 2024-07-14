@@ -1,5 +1,5 @@
 # TeleICU-Monitoring-System
-* This project is developed by Team Duelist
+* This project is developed by Team Duelists
 * Team Members:
   * Debraj Mistry (Team Lead)
   * Md Faizan
@@ -192,16 +192,19 @@ Example inputs:
 **Terminate the Script**: To terminate the script, press q while the video window is active.
 
 **Platform-Specific Notes**
+
 Windows
 * Ensure you have the correct drivers installed for your GPU if using CUDA for acceleration.
+  
 Mac
 * Ensure you have Xcode command line tools installed for compiling certain packages.
 * Use python3 instead of python if your system defaults to Python 2.
+
 Linux
 * Ensure you have the necessary build tools installed. You can typically install them via your package manager. For example, on Ubuntu, you can run:
 
-    sudo apt-get update
-    sudo apt-get install build-essential
+      sudo apt-get update
+      sudo apt-get install build-essential
 ## Troubleshooting
 * If you encounter issues with yt-dlp, ensure you have the latest version installed.
 * For any dependency issues, verify that all packages in "requirements.txt" are installed correctly and compatible with your Python version.
