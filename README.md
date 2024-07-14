@@ -117,3 +117,89 @@ Multithreading is used to ensure smooth performance, especially for the continuo
 # ⏳Conclusion
 
 The TeleICU Monitoring System revolutionizes remote ICU patient care by integrating advanced video processing and deep learning techniques. Our system supports versatile video input from local files, URLs, and live CCTV feeds, ensuring flexibility in various monitoring scenarios. Leveraging the YOLOv8 model, it accurately detects and identifies individuals such as doctors, nurses, patients, monitor, others, dynamically changing bounding box colors to indicate the presence of healthcare professionals and specific patient movements. Unique features include detailed analysis of head, hand, leg movements, signs of breathlessness, and a robust fall detection system that generates real-time alerts. The system processes and saves annotated video feeds in real-time, accompanied by comprehensive movement logs with timestamps, ensuring accurate documentation for future analysis. By providing these innovative tools, our TeleICU Monitoring System significantly enhances patient safety and care quality, setting a new standard in telemedicine and remote ICU monitoring.
+
+# 🤖 Installation and Run Guide
+
+# 📽️ Guide Video
+
+## Prerequisites
+* Python 3.8 
+* Git / Github Desktop
+
+## Installation Guide
+
+Step 1: Clone the Repository
+First, clone the repository from GitHub.
+
+
+
+    git clone https://github.com/DMHACKERZ/TeleICU-Monitoring-System
+    cd your-repo-directory
+
+Step 2: Set Up a Virtual Environment
+Create and activate a virtual environment to manage dependencies.
+* Ensure you run all the following commands inside "your-repo-directory"
+
+**Windows**
+cmd
+
+    python -m venv environment_name
+    environment_name\Scripts\activate
+
+**Mac and Linux**
+
+    python3 -m venv environment_name
+    source environment_name/bin/activate
+
+Step 3: Install Dependencies
+Install the required Python packages using pip.
+
+
+     pip install -r requirements.txt
+
+
+
+## Running the Code
+
+Step 1: Ensure YOLO Models Are Available
+Ensure that the Fine-Tuned YOLO models (person_labelling.pt and fall_detection.pt) are available in the project directory.
+
+Step 2: Run the Script
+To run the script, execute the following command:
+
+
+    python icu.py
+
+**Usage Guide**
+
+Prompt for Video Source: After running the script, you will be prompted to enter the video source. You can provide a file path, a YouTube URL, or type 'cctv' for live camera feed.
+
+Example inputs:
+
+    Enter the video file path, URL, or 'cctv' for live feed: example_video.mp4
+    Enter the video file path, URL, or 'cctv' for live feed: https://www.youtube.com/watch?v=example
+    Enter the video file path, URL, or 'cctv' for live feed: cctv
+    
+**Monitor the Output**: The script will process the video and display a window with live predictions. Detected movements will be logged in "movement_log.txt" in real-time. If a fall is detected, the alert will be displayed on the video feed.
+
+**Terminate the Script**: To terminate the script, press q while the video window is active.
+
+**Platform-Specific Notes**
+Windows
+* Ensure you have the correct drivers installed for your GPU if using CUDA for acceleration.
+Mac
+* Ensure you have Xcode command line tools installed for compiling certain packages.
+* Use python3 instead of python if your system defaults to Python 2.
+Linux
+* Ensure you have the necessary build tools installed. You can typically install them via your package manager. For example, on Ubuntu, you can run:
+
+    sudo apt-get update
+    sudo apt-get install build-essential
+## Troubleshooting
+* If you encounter issues with yt-dlp, ensure you have the latest version installed.
+* For any dependency issues, verify that all packages in "requirements.txt" are installed correctly and compatible with your Python version.
+* Check the logs and error messages for specific issues and resolve them accordingly. Common issues might include missing files, incorrect paths, or compatibility problems.
+
+# Contributing
+
+Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
