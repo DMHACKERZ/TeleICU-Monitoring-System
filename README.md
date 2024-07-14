@@ -128,7 +128,7 @@ The TeleICU Monitoring System revolutionizes remote ICU patient care by integrat
 # 🤖 Installation and Run Guide
 
 # 📽️ Guide Video
-  Full guide for better understanding [ Guide_video.mp4](url)
+  Full guide for better understanding [ Guide_video.mp4](https://github.com/DMHACKERZ/TeleICU-Monitoring-System/blob/main/Guide_video.mp4)
 
 ## Prerequisites
 * Python 3.8 
