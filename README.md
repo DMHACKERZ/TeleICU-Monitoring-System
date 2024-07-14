@@ -1,4 +1,11 @@
 # TeleICU-Monitoring-System
+* This project is developed by Team Duelist
+* Team Members:
+  * Debraj Mistry (Team Lead)
+  * Md Faizan
+  * Jyotipriya Mallick
+  * Sushanta Bhunia
+       
 # 🔍 Project Overview
 This project implements an innovative monitoring system for TeleICU patients using video processing and deep learning techniques. The system aims to reduce the burden on remote healthcare professionals by allowing them to monitor multiple patients simultaneously.
 
