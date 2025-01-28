@@ -5,6 +5,7 @@
   * Md Faizan
   * Jyotipriya Mallick
   * Sushanta Bhunia
+  * Hrishikesh Chandra
        
 # 🔍 Project Overview
 This project implements an innovative monitoring system for TeleICU patients using video processing and deep learning techniques. The system aims to reduce the burden on remote healthcare professionals by allowing them to monitor multiple patients simultaneously.
